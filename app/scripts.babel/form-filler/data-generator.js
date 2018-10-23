@@ -296,7 +296,7 @@ class DataGenerator {
   }
 
   generateDate() {
-    const randomYear = this.generateNumber(1970, new Date().getFullYear());
+    const randomYear = this.generateNumber(1950, new Date().getFullYear());
     const randomMonth = (`0${this.generateNumber(1, 12)}`).slice(-2);
     const randomDay = (`0${this.generateNumber(1, 28)}`).slice(-2);
     return `${randomYear}-${randomMonth}-${randomDay}`;
